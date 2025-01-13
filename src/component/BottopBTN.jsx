@@ -1,5 +1,6 @@
 import React from 'react'
 import React, { useState, useEffect } from "react";
+import { IoArrowUpCircleOutline } from "react-icons/io5";
 
 const BottopBTN = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,12 +30,12 @@ const BottopBTN = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-5 right-5 p-3 rounded-full bg-blue-500 text-white shadow-lg transition-opacity ${
+      className={`fixed bottom-20 right-20 p-3 rounded-full text-white shadow-lg transition-opacity ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
       aria-label="Back to Top"
     >
-      ↑
+     <IoArrowUpCircleOutline />
     </button>
   );
 };
