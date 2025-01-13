@@ -30,7 +30,7 @@ const BottopBTN = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-20 right-20 p-3 rounded-full text-white shadow-lg transition-opacity ${
+      className={`fixed bottom-20 right-20 text-[40px] p-3 rounded-full text-white shadow-lg transition-opacity ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
       aria-label="Back to Top"
